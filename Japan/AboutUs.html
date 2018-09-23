@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Project: Japanese AboutUs Page
+			 Creator: Kimberly Leubner, John Arnold
+			 Class: CIS 131
+		-->
+		 
+		<meta charset="utf-8" />
+		<title>About Us</title>
+		<link href="Reset.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		<link href="Styles.css" rel="stylesheet" type="text/css" />
+		<script src="modernizr.custom.05819.js"></script>
+	</head>
+	
+	<body>
+	<header id="logo">ABOUT US</header>
+		<header><img src="images/cover.gif" alt="Japanese Food Cover" /></header>
+		
+		<nav>
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="Entrees.html">Entrees</a></li>
+				<li><a href="Dessert.html">Desserts</a></li>
+				<li  class="active"><a href="ContactUs.html">About Us</a></li>
+			</ul>
+		</nav>
+		
+	<article>
+      <h1>Contact Information</h1>
+      <form>
+        <fieldset id="contactinfo">
+          <label for="nameinput">
+            Name
+            <input type="text" id="nameinput" name="name" />
+          </label>
+          <label for="emailinput">
+            Email
+            <input type="text" id="emailinput" name="email" />
+          </label>
+          <label for="phoneinput">
+            Phone
+            <input type="text" id="phoneinput" name="phone" />
+          </label>
+        </fieldset>
+        <fieldset id="submitbutton">
+          <input type="button" id="submit" value="Submit" />
+        </fieldset>
+     </form>
+   </article>
+   <script>
+	   function submitInfo() { 
+		var name = document.getElementById("nameinput"); 
+		var email = document.getElementById("emailinput"); 
+		var phone = document.getElementById("phoneinput"); 
+		(name.value && email.value && phone.value) ?
+			alert("Thank you!") : alert("Please fill in all fields");
+		}
+		document.getElementById("submit"). 
+			addEventListener("click", submitInfo, false);
+	</script>
+		
+	<footer>
+		Kimberly Leubner, John Arnold &#9728; CIS 131 &#9728; Fall 2018
+	</footer>
+		
+	</body>
+	
+	
+</html>
